@@ -1,29 +1,5 @@
-# vue-okiosk
+# Okiosk
 
-## Project setup
-```
-yarn install
-```
+## 이 프로젝트는??
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue의 상태관리 도구인 Vuex를 활용해 키오스크 UI를 만들어보는 연습 프로젝트입니다.
