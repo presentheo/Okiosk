@@ -15,7 +15,7 @@
           <div class="item-price">
             <p>{{item.price}}원</p>
           </div>
-          <button @click="onAddToOrder(item.name, item.price)">주문하기</button>
+          <button @click="onAddToOrder(item)">주문하기</button>
         </div>
       </div>
       <!-- 아이템 리스트 반복 구간 끝 -->
@@ -38,12 +38,9 @@ export default {
     }
   },
   methods: {
-    onAddToOrder: function(item, price) {
+    onAddToOrder: function(item) {
       this.$store.commit('startOrder');
-      this.$store.commit('addToOrder', {
-        item: item,
-        price: price
-      })
+      this.$store.commit('addToOrder', {orderItem: item})
     }
   },
 }
